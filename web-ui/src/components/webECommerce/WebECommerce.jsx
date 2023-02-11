@@ -7,8 +7,8 @@ import * as config from '../../config';
 // Components
 import Navigation from '../navigation/Navigation';
 import VideoPlayer from '../videoPlayer/VideoPlayer';
-import ProductList from '../productList/ProductList';
-import LiveExperts from '../liveExperts/LiveExperts';
+// import ProductList from '../productList/ProductList';
+// import LiveExperts from '../liveExperts/LiveExperts';
 
 // Styles
 import './WebECommerce.css';
@@ -31,12 +31,12 @@ const WebECommerce = () => {
       <div className="web-ecommerce-content pd-2 grid fl fl-j-center">
         <div className="video-product-content">
           <VideoPlayer setMetadataId={setCurrentProductId} videoStream={config.DEFAULT_VIDEO_STREAM} />
-          <ProductList
+          {/* <ProductList
             currentProductId={currentProductId}
             setModal={setShowModal}
             showModal={showModal}
-          />
-          <LiveExperts />
+          /> */}
+          {/* <LiveExperts /> */}
         </div>
       </div>
     </div>
